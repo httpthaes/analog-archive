@@ -1,0 +1,15 @@
+:root {
+  --font-body:'VT323', monospace;
+  --font-title:'Press Start 2P', monospace;
+  --bg: #0d0d0d;
+  --bg-2: #141414;
+  --panel: #1a1a1a;
+  --border: #2a2a2a;
+
+  --text: #d6d6d6;
+  --muted: #7a7a7a;
+
+  --accent: #b3001b;
+  --accent-2: #e8c547;
+  --link: #6ea8fe;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thaislaine Erica</title>
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <script src="src/js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <nav class="menu">
+      <a class="menu-link" href="index.html">[sobre mim]</a>
+      <a class="menu-link" href="formacao.html">[formação]</a>
+      <a class="menu-link" href="projetos.html">[projetos]</a>
+      <a class="menu-link" href="contato.html">[contato]</a>
+    </nav>
+  </header>
+
+  <div class="hud">
+    <div class="rec">REC</div>
+    <div class="time">00:00:00</div>
+  </div>
+
+  <main>
+    <h1 class="page-title">&gt; Contato</h1>
+    <p class="subtitle"></p>
+
+    <div class="panel">
+      <ul class="contact-list">
+        <li>email &nbsp;&nbsp;&nbsp;:: <a href="mailto:thaiserica1304@gmail.com">thaiserica1304@gmail.com</a></li>
+        <li>github &nbsp;&nbsp;:: <a href="https://github.com/httpthaes" target="_blank">httpthaes</a></li>
+        <li>linkedin :: <a href="https://www.linkedin.com/in/thaislaine-reis/" target="_blank">thaislaine-reis</a></li>
+      </ul>
+    </div>
+
+    <h2 class="section">deixe uma mensagem</h2>
+    <div class="panel">
+      <form onsubmit="event.preventDefault(); alert('>> mensagem gravada na fita.'); this.reset();">
+        <label for="nome">nome</label>
+        <input id="nome" type="text" required placeholder="seu nome aqui_" />
+
+        <label for="email">email</label>
+        <input id="email" type="email" required placeholder="voce@dominio.com" />
+
+        <label for="msg">mensagem</label>
+        <textarea id="msg" rows="5" required placeholder="digite a mensagem..."></textarea>
+
+        <button type="submit">&gt; ENVIAR_</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>[ Thaislaine Erica <span class="blink">_</span> ] &nbsp; 2026</footer>
+</body>
+
+</html>

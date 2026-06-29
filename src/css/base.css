@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.4;
+  min-height: 100vh;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+}
+
+img {
+    max-width: 300px;
+    filter: saturate(100%);
+    transition: filter .3s ease;
+}
+
+img:hover {
+    filter: saturate(120%);
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}

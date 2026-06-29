@@ -1,0 +1,52 @@
+/* grain de fundo */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+
+ background-image:
+  radial-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+  radial-gradient(rgba(0,0,0,.15) 1px, transparent 1px);
+
+  background-size: 3px 3px, 4px 4px;
+  background-position: 0 0, 1px 2px;
+  opacity: .5;
+}
+
+/* scanlines VHS */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+
+  background:
+    repeating-linear-gradient(to bottom,
+      rgba(255, 255, 255, .05) 0,
+      rgba(255, 255, 255, .05) 1px,
+      transparent 1px,
+      transparent 3px);
+
+  animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 120px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
