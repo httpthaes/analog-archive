@@ -1,4 +1,4 @@
-const paginaAtual = window.location.pathname.split("/").pop();
+const paginaAtual = window.location.pathname.split("/").pop() || "index.html";
 
 const links = document.querySelectorAll(".menu a");
 
