@@ -1,15 +1,12 @@
 @media (max-width: 600px) {
 
+  .profile-sheet {
+    flex-direction: column;
+    align-items: center;
+  }
+
   body {
     font-size: 18px;
-  }
-
-  .page-title {
-    font-size: 18px;
-  }
-
-  .brand {
-    font-size: 10px;
   }
 
   .menu-link {
